@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<link rel="stylesheet" href="style.css">
+		<!-- CSS only -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+	</head>
+	<body>
+		<div class="d-grid gap-2 mx-auto col-6">
+			<button type="button" class="btn btn-outline-secondary" id="menuOpen" data-toggle="modal" data-target="#menu">Menú</button>
+		</div>
+
+		<div class="modal" id="menu" aria-labelledby="menuTitle" aria-hidden="true" tabindex="-1">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="menuTitle">Menú</h5>
+					</div>
+					<div class="modal-body">
+						<h2 id="result"></h2>
+						<hr>
+						<div class="d-grid gap-2 mx-auto col-6">
+							<button class="btn btn-secondary" id="newGame">Nueva Partida</button>
+							<button class="btn btn-secondary nodisplay" id="newGameIA">Nueva Partida VS IA</button>
+							<button class="btn btn-secondary" id="newGameNoIA">Nueva Partida VS Jugador</button>
+							<button class="btn btn-secondary" id="soundOff">Desactivar Sonido</button>
+							<button class="btn btn-secondary nodisplay" id="soundOn">Activar Sonido</button>
+							<button class="btn btn-outline-secondary" id="back" data-dismiss="modal">Regresar</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<canvas id="canvas" width="903" height="903"></canvas>
+		<script src="script.js"></script>
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+	</body>
+</html>
